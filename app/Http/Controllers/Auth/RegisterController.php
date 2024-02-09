@@ -70,13 +70,19 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'jk' => $data['jk'],
-            'no_tlp' => $data['no_tlp'],
-            'role' => 'siswa',
-        ]);
+        try {
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+                'jk' => $data['jk'],
+                'no_tlp' => $data['no_tlp'],
+                'role' => 'siswa',
+            ]);
+        } catch (\Exception $e) {
+            // Log the exception or dd($e) for debugging.
+            dd($e->getMessage());
+        }
     }
+
 }

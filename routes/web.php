@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 |
  */
 Auth::routes();
+
 Route::get('/', [user\WelcomeController::class, 'index'])->name('home');
 //Route::get('/home', [user\WelcomeController::class, 'index'])->name('home2');
 Route::get('/berita', [user\BeritaController::class, 'index'])->name('user.berita');
