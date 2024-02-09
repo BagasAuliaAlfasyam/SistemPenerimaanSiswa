@@ -53,8 +53,8 @@
           </ul> -->
           <div class="btn-wrap">
             <a href="{{ route ('register') }}" class="btn-buy">Daftar Sekarang</a>
-          </div>  
-        </div> 
+          </div>
+        </div>
       </div>
       @endforeach
     </div>
@@ -62,7 +62,7 @@
 </section><!-- End Pricing Section -->
 
 <!-- ======= Frequently Asked Questions Section ======= -->
-<section id="faq" class="faq">
+{{-- <section id="faq" class="faq">
   <div class="container">
 
     <div class="section-title">
@@ -131,7 +131,7 @@
     </div><!-- End F.A.Q Item-->
 
   </div>
-</section><!-- End Frequently Asked Questions Section -->
+</section><!-- End Frequently Asked Questions Section --> --}}
 
 </main><!-- End #main -->
 @endsection

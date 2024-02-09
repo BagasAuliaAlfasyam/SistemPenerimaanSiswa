@@ -82,7 +82,7 @@ class PengumumanController extends Controller
         // $pn = Pengumuman::findOrFail($id);
         // $pengumuman[0]->nama_siswa;
         //dd($data);
-        $subject = "Contact dari : Panitia SMK Negeri 3 Sorong";
+        $subject = "Contact dari : Panitia SMP Negeri 2 PANTE BIDARI";
         $name = $pengumuman[0]->nama_siswa;
         $emailAddress = $pengumuman[0]->email;
         $message = $request->input('message');
@@ -94,13 +94,13 @@ class PengumumanController extends Controller
             $mail->isSMTP(); // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
             $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->Username = 'papuauser27@gmail.com'; // SMTP username
-            $mail->Password = 'wngzjlzduifyvmok'; // SMTP password
+            $mail->Username = 'cehneseeeee@gmail.com'; // SMTP username
+            $mail->Password = 'awokawokawok'; // SMTP password
             $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587; // TCP port to connect to
 
             // Sender
-            $mail->setFrom("papuauser27@gmail.com", "Panitia SMK N.3 Sorong");
+            $mail->setFrom("Acehneseeeee@gmail.com", "Panitia SMP Negeri 2 PANTE BIDARI");
 
             // who will receive the email submission
             $mail->addAddress($pengumuman[0]->email); // Add a recipient
@@ -121,7 +121,7 @@ class PengumumanController extends Controller
             $mail->Body = preg_replace('/\[\]/', '', $message);
 
             $mail->send();
-            $request->session()->flash('status', 'Terima kasih, kami sudah menerima email anda.');
+            session()->flash('status', 'Terima kasih, kami sudah menerima email anda.');
             //return view('panitia.data_pengumuman.data_pesan');
 
         } catch (Exception $e) {

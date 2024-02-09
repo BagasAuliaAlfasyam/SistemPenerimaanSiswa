@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PSBB SMK Negeri 3 KOTA SORONG</title>
+  <title>SMP Negeri 2 PANTE BIDARI</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <!-- Favicons -->
@@ -32,39 +32,24 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><a href="{{ route ('home') }}">SMK Negeri 3 KOTA SORONG</a></h1>
+      <h1 class="logo me-auto"><a href="{{ route ('home') }}">SMP Negeri 2 PANTE BIDARI</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="{{ asset('user') }}//img/logo.png" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="{{ Request::path() === '/' ? '' : '' }}"><a href="{{ route ('home') }}" class="active">Home</a></li>
-          <li class="{{ Request::path() === 'berita' ? '' : '' }}"><a href="{{ route ('user.berita') }}">Berita</a></li>
-          <li><a href="{{ route ('user.jurusan') }}">Jurusan</a></li>
-          <li><a href="{{ route ('user.galeri') }}">Galeri</a></li>     
-          <li><a href="{{ route ('user.kontak') }}">Kontak</a></li>
-          <li class="dropdown"><a href="#"><span>Tentang Kami</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="{{ route ('user.tentang') }}">About</a></li>
-              <li><a href="team.html">Visi dan Misi</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-
-              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li> -->
-            </ul>
-          </li>
-          <li><a href="{{ route ('register') }}">Daftar</a></li>
-          <li><a href="{{ route ('login') }}" class="getstarted">Login</a></li>
+            <li class="{{ Request::path() === '/' ? 'active' : '' }}"><a href="{{ route ('home') }}">Home</a></li>
+            <li class="{{ Request::path() === 'berita' ? 'active' : '' }}"><a href="{{ route ('user.berita') }}">Berita</a></li>
+            <li class="{{ Request::path() === 'user.jurusan' ? 'active' : '' }}"><a href="{{ route ('user.jurusan') }}">Jurusan</a></li>
+            <li class="{{ Request::path() === 'user.galeri' ? 'active' : '' }}"><a href="{{ route ('user.galeri') }}">Galeri</a></li>
+            <li class="{{ Request::path() === 'user.kontak' ? 'active' : '' }}"><a href="{{ route ('user.kontak') }}">Kontak</a></li>
+            <li class="{{ Request::path() === 'user.tentang' ? 'active' : '' }}"><a href="{{ route ('user.tentang') }}">Tentang Kami</a></li>
+            <li class="{{ Request::path() === 'register' ? 'active' : '' }}"><a href="{{ route ('register') }}">Daftar</a></li>
+            <li class="{{ Request::path() === 'login' ? 'active' : '' }}"><a href="{{ route ('login') }}" class="getstarted">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    </nav><!-- .navbar -->
+
 
     </div>
   </header>

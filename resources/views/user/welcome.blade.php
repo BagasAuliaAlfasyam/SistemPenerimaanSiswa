@@ -70,33 +70,15 @@
 
         <div class="row content">
           <div class="col-lg-6">
-          <img src="{{ asset('user') }}/img/team/Logo_SMK.jpg" class="img-fluid" alt="">
+          <img src="{{ asset('user') }}/img/team/logo.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
           <h2>About</h2>
               <p align="justify">
-              Sehubungan dengan upaya mewujudkan dan menindak lanjuti Kebijakan 
-              Dikmenjur tentang 
-              Reposisi Pendidikan Kejuruan menjelang tahun 2020 mengisyaratkan bahwa arah Pembinaan
-              dan Pengembangan Sekolah berorientasi pada penyiapan Sumber Daya Manusia (SDM) yang 
-              dapat menjadi aset pemerintah daerah dalam rangka otonomi daerah sekaligus mempersiapkan
-              tenaga kerja yang memiliki kompetensi dan daya saing untuk menghadapi era global. 
-              Sebagai konsekuensinya adalah SMK Negeri 3 Kota Sorong sebagai salah satu lembaga 
-              penyelenggara pendidikan merasa berkewajiban untuk berperan serta membekali tamatannya 
-              dengan kecakapan hidup (life skill) secara integratif, yang memadukan potensi generik 
-              dan spesifik, guna memecahkan dan mengatasi problema hidup. Kecakapan hidup yang mestinya 
-              dimiliki oleh setiap tamatan yang akan terjun ke masyarakat tersebut antara lain,
-              Kecakapan mengenal diri (personal skill), kecakapan berpikir rasional (thinking skill),
-              kecakapan social (social skil), kecakapan akademik (academic skill) dan kecakapan
-              kejuruan (vocational skill).
-              Disisi lain belakangan ini angka pengangguran semakin tinggi. Karenanya ada 3 (tiga)
-              hal yang dapat diusulkan untuk mengatasi pengangguran tersebut, yaitu :
+                SMP negeri ini berdiri sejak 01 januari 1910. Para siswa yang belajar di sekolah ini ada anak Perempuan dan anak laki-laki. Dalam perkembangannya karena minat yang tinggi dari Masyarakat untuk menyekolahkan anaknya maka sekolah dibuka untuk putra maupun putri.
+                SMP Negeri 2 Pante Bidari merupakan suatu instansi pemerintahan yang dipimpin oleh seorang Kepala Sekolah dengan guru-guru sebagai tenaga pengajar dan kesiswaan, tenaga komite, tenaga tata usaha, pengelola perpustakaan, dan penjaga sekolah. SMP Negeri Pante Bidari telah mencapai akreditasi B dan SMP Negeri 2 Pante Bidari memiliki tujuan menjadi sekolah yang dibanggakan masyarakat, pencapaian nilai rata-rata ujian akhir memenuhi target dan 100% kelulusan, kemudian melanjutkan sekolah ke jenjang yang lebih tinggi, dan selalu berprestasi dalam berbagai lomba akademik dan non akademik, baik di tingkat Kecamatan, Kota/Kabupaten, maupun Provinsi.
+                 Sekarang SMP Negeri 2 Pantee Bidari memakai panduan kurikulum belajar SMP 2013. SMPN 2 Pantee Bidari dibawah komando seorang kepala sekolah dengan nama Syarkawi ditangani oleh seorang operator yang bernama Marlina.
               </p>
-            <ul>
-            <li><i class="ri-check-double-line"></i> Mencari kerja membuka usaha mandiri</li>
-          <li><i class="ri-check-double-line"></i> Pekerja menggarap sektor perikanan ( kelautan )</li>
-          <li><i class="ri-check-double-line"></i> Pekerja menggarap sektor pertanian (melalui kegiatan transmigrasi)</li>
-            </ul>
             <!-- <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -259,9 +241,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Pembelajaran</li>
+              <li data-filter=".filter-card">Acara Besar</li>
+              <li data-filter=".filter-web">Ekstrakulikuler</li>
             </ul>
           </div>
         </div>
@@ -270,7 +252,7 @@
         @foreach($galeri as $g)
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-           
+
               <img src="{{ asset('storage/'.$g->foto) }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <p>{{$g->judul}}</p>
@@ -279,11 +261,11 @@
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
-             
+
             </div>
           </div>
           @endforeach
-<!-- 
+<!--
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="{{ asset('user') }}/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">

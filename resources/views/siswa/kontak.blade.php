@@ -21,7 +21,7 @@
   <div class="container">
 
     <div>
-      <iframe style="border:0; width: 100%; height: 270px;" src="https://maps.google.com/maps?q=smk%20negeri%203%20kota%20sorong&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+      <iframe style="border:0; width: 100%; height: 270px;" src="https://maps.google.com/maps?q=smpn%202%20negeri%20pante%20bidari&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="row mt-5">
@@ -31,19 +31,19 @@
           <div class="address">
             <i class="bi bi-geo-alt"></i>
             <h4>Location:</h4>
-            <p>Jl. Basuki Rahmat No.KM.12, Klawuyuk, Distrik Sorong Timur, Kota Sorong, Papua Bar. 98416, Indonesia</p>
+            <p>Jl Medan-Banda Aceh km.331 Desa Putoh Sa kec. Pante Bidari kab. Aceh timur kode pos 24458</p>
           </div>
 
           <div class="email">
             <i class="bi bi-envelope"></i>
             <h4>Email:</h4>
-            <p>kantor@smkn3ktsorong.sch.id</p>
+            <p>smp2bidari@yahoo.com</p>
           </div>
 
           <div class="phone">
             <i class="bi bi-phone"></i>
             <h4>Call:</h4>
-            <p>0951322621</p>
+            <p>0822-7257-1184</p>
           </div>
 
         </div>
