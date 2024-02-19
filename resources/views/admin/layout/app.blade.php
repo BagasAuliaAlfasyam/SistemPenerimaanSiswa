@@ -79,11 +79,7 @@
 
                                 <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-home"></i>Home<span
                                             class="#"></span></a>
-                                    <!-- <ul class="nav child_menu">
-                      <li><a href="index.html">Dashboard</a></li>
-                      <li><a href="index2.html">Dashboard2</a></li>
-                      <li><a href="index3.html">Dashboard3</a></li>
-                    </ul> -->
+
                                 </li>
                                 <li><a><i class="fa fa-edit"></i> Data User <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
@@ -109,7 +105,6 @@
                                 <li><a><i class="fa fa-edit"></i>Galeri <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="{{ route('admin.galeri') }}">Data Galeri</a></li>
-                                        <li><a href="#">Data Kategori</a></li>
 
                                     </ul>
                                 </li>
@@ -127,8 +122,6 @@
                                     <ul class="nav child_menu">
                                         <li><a href="{{ route('admin.kontak') }}">Kontak</a></li>
                                         <li><a href="{{ route('admin.tentang') }}">tentang</a></li>
-                                        <!-- <li><a href="{{ route('admin.laporan.jurusan') }}">Data Jurusan</a></li>
-                      <li><a href="{{ route('admin.laporan.berita') }}">Data Berita</a></li> -->
                                     </ul>
                                 </li>
                             </ul>

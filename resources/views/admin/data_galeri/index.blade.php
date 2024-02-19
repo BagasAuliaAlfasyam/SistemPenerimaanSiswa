@@ -34,7 +34,7 @@
                       <div class="row">
                           <div class="col-sm-12">
                             <div class="card-box table-responsive">
-                            <h2>Data Galeri <small>Users</small></h2>
+                            <h2>Data Galeri</h2>
                     <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                       <thead>
                         <tr>

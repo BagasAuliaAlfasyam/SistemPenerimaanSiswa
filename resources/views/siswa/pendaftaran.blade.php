@@ -74,7 +74,7 @@
                         <option value="Hindu">Hindu</option>
                         <option value="Budha">Budha</option>
                         <option value="Khonghucu">Khonghucu</option>
-                        </select>                   
+                        </select>
                      </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Jurusan<span class="required">*</span></label>
@@ -84,7 +84,7 @@
                         @foreach ($jurusan as $j)
                             <option value="{{ $j->id }}">{{ $j->nama }}</option>
                         @endforeach
-                        </select>                   
+                        </select>
                      </div>
                      <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Tahun Ajaran <span class="required">*</span></label>
@@ -98,7 +98,7 @@
                         <option>--Pilih Jenis Kelamin--</option>
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
-                        </select>                   
+                        </select>
                      </div>
                      <div class="field item form-group">
                     <label class="col-form-label col-md-3 col-sm-3  label-align">Upload File Raport <span class="required">*</span></label>
@@ -116,7 +116,7 @@
                             <textarea class="form-control" required="required" name='alamat'></textarea></div>
                     </div>
                     <div class="field item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3  label-align">Nomor Tlp<span class="required">*</span></label>
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">No HP<span class="required">*</span></label>
                         <div class="col-md-7 col-sm-7">
                             <input class="form-control" type="tel" class='tel' name="no_tlp" required='required' data-validate-length-range="8,20" /></div>
                     </div>
@@ -131,7 +131,7 @@
                     <button type='submit' class="btn btn-primary">Submit</button>
                     <button type='reset' class="btn btn-success">Reset</button>
                     </span></label>
-                    
+
                     </div>
                 </form>
                 </div>
@@ -141,18 +141,18 @@
 </div>
 </div>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/multifield.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/validator.js"></script>
-    
+
     <!-- Javascript functions	-->
 	<script>
 		function hideshow(){
 			var password = document.getElementById("password1");
 			var slash = document.getElementById("slash");
 			var eye = document.getElementById("eye");
-			
+
 			if(password.type === 'password'){
 				password.type = "text";
 				slash.style.display = "block";

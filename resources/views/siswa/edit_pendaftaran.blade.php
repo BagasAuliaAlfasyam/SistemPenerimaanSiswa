@@ -46,7 +46,7 @@
                         <div class="col-md-7 col-sm-7">
                             <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="nama_siswa" value="{{ $pendaftaran[0]->nama_siswa }}"/>
                         </div>
-                    </div>  
+                    </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Asal Sekolah<span class="required">*</span></label>
                         <div class="col-md-7 col-sm-7">
@@ -64,7 +64,7 @@
                         <div class="col-md-7 col-sm-7">
                             <input class="form-control" class='date' type="date" name="tgl_lahir" value="{{ $pendaftaran[0]->tgl_lahir }}"></div>
                     </div>
-                  
+
                     <div class="field item form-group">
                     <label class="col-form-label col-md-3 col-sm-3  label-align">Jurusan<span class="required">*</span></label>
                         <div class="col-md-7 col-sm-7">
@@ -73,7 +73,7 @@
                         @foreach ($jurusan as $j)
                             <option value="{{ $j->id }}">{{ $j->nama }}</option>
                         @endforeach
-                        </select>                   
+                        </select>
                      </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Tahun Ajaran <span class="required">*</span></label>
@@ -81,7 +81,7 @@
                             <input class="form-control" class='optional' name="tahun_ajaran" data-validate-length-range="5,15" type="text" value="{{ $pendaftaran[0]->tahun_ajaran }}" />
                         </div>
                     </div>
-                
+
                     <div class="field item form-group">
                     <label class="col-form-label col-md-3 col-sm-3  label-align">Jenis Kelamin<span class="required">*</span></label>
                     <div class="col-md-7 col-sm-7">
@@ -89,7 +89,7 @@
                         <option selected value="{{ $pendaftaran[0]->jk }}">{{ $pendaftaran[0]->jk }}</option>
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
-                        </select>                   
+                        </select>
                      </div>
 
                     <div class="field item form-group">
@@ -99,15 +99,15 @@
                     <img src="{{ asset('storage/'.$pendaftaran[0]->file_raport) }}" alt="" class="img-responsive" width="100%" >
                         </div>
                     </div>
-               
-               
+
+
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Tanggal Daftar<span class="required">*</span></label>
                         <div class="col-md-7 col-sm-7">
                             <input class="form-control" class='text' type="text" name="tgl_daftar" value="{{ \Carbon\Carbon::parse( $pendaftaran[0]->tgl_daftar)->format('d-m-Y') }}" readonly>
                         </div>
                     </div>
-                        
+
                     <div class="field item form-group">
                     <label class="col-form-label col-md-3 col-sm-3  label-align">Agama<span class="required">*</span></label>
                     <div class="col-md-7 col-sm-7">
@@ -119,7 +119,7 @@
                         <option value="Hindu">Hindu</option>
                         <option value="Budha">Budha</option>
                         <option value="Khonghucu">Khonghucu</option>
-                        </select>                   
+                        </select>
                      </div>
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Alamat<span class="required">*</span></label>
@@ -127,7 +127,7 @@
                             <textarea class="form-control" type="text" required="required" name="alamat">{{ ($pendaftaran[0]->alamat) }}</textarea></div>
                     </div>
                     <div class="field item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3  label-align">Nomor Tlp<span class="required">*</span></label>
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">No HP<span class="required">*</span></label>
                         <div class="col-md-7 col-sm-7">
                             <input class="form-control" type="tel" class='tel' name="no_tlp" required='required' data-validate-length-range="8,20" value="{{ $pendaftaran[0]->no_tlp }}" /></div>
                     </div>
@@ -137,36 +137,36 @@
                             <input class="form-control" name="email" class='email' required="required" type="email" value="{{ $pendaftaran[0]->email }}" /></div>
                     </div>
                     <input type="hidden" class="form-control"   name="status" />
-                @endif        
+                @endif
                     <input type="hidden" class="form-control"   name="status" />
                     <div class="field item form-group">
                     <label class="col-form-label col-md-6 col-sm-6  label-align"><span class="required">
                     <button type='submit' class="btn btn-primary">Simpan</button>
                     </span></label>
-                    
+
                     </div>
-            
+
                 </form>
                 </div>
-            
+
             </div>
         </div>
     </div>
 </div>
 </div>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/multifield.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/validator.js"></script>
-    
+
     <!-- Javascript functions	-->
 	<script>
 		function hideshow(){
 			var password = document.getElementById("password1");
 			var slash = document.getElementById("slash");
 			var eye = document.getElementById("eye");
-			
+
 			if(password.type === 'password'){
 				password.type = "text";
 				slash.style.display = "block";

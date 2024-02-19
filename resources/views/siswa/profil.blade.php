@@ -60,7 +60,7 @@
                     <div class="field item form-group">
                     <label class="col-form-label col-md-3 col-sm-3  label-align">File Raport <span class="required">*</span></label>
                     <img src="{{ asset('storage/'.$pendaftaran[0]->file_raport) }}" alt="" class="img-responsive" width="100%" >
-               
+
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Tanggal Daftar<span class="required">*</span></label>
                         {{ \Carbon\Carbon::parse( $pendaftaran[0]->tgl_daftar)->format('d-m-Y') }}
@@ -71,15 +71,15 @@
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Alamat<span class="required">*</span></label>
                         : {{ $pendaftaran[0]->alamat }}
                     <div class="field item form-group">
-                        <label class="col-form-label col-md-3 col-sm-3  label-align">Nomor Tlp<span class="required">*</span></label>
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">No HP<span class="required">*</span></label>
                         : {{ $pendaftaran[0]->no_tlp }}
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">email<span class="required">*</span></label>
                         : {{ $pendaftaran[0]->email }}
                     <input type="hidden" class="form-control"   name="status" />
-                @endif  
+                @endif
             @if(isset($registrasi[0]))
-           
+
 
                     <div class="field item form-group">
                     <input type="hidden" class="form-control"   name="user_id" />
@@ -133,7 +133,7 @@
                       <label>RT<span class="required"> : {{ $registrasi[0]->rt }}</span></label>
                       </div>
                       <div class="col-md-6 col-sm-6">
-                     
+
                       </div>
                       </div>
                     </div>
@@ -143,7 +143,7 @@
                       <label>RW<span class="required"> : {{ $registrasi[0]->rw }}</span></label>
                       </div>
                       <div class="col-md-6 col-sm-6">
-                     
+
                       </div>
                       </div>
                     </div>
@@ -153,42 +153,42 @@
                         : {{ $registrasi[0]->golongan_darah }}
                      <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Tanggal Registrasi <span class="required">*</span></label>
-                        : {{ \Carbon\Carbon::parse( $registrasi[0]->tgl_registrasi)->format('d-m-Y') }}  
+                        : {{ \Carbon\Carbon::parse( $registrasi[0]->tgl_registrasi)->format('d-m-Y') }}
                     <div class="field item form-group">
                         <label class="col-form-label col-md-3 col-sm-3  label-align">Jumlah Saudara Kandung<span class="required">*</span></label>
                         : {{ $registrasi[0]->jmlh_saudara_kandung }}
-            @endif       
+            @endif
                     <input type="hidden" class="form-control"   name="status" />
                     <div class="field item form-group">
                                 <label class="col-form-label col-md-6 col-sm-6  label-align"><span class="required">
-                            @if(isset($pendaftaran[0]))        
+                            @if(isset($pendaftaran[0]))
                                 <a href="{{ route('siswa.edit_pendaftaran',['id'=>$pendaftaran[0]->id]) }}" button type="submit" class="btn btn-primary">Edit Pendaftaran</a>
-                            @endif 
+                            @endif
                             @if(isset($registrasi[0]))
                                 <a href="{{ route('siswa.edit_registrasi',['id'=>$registrasi[0]->id]) }}" button type='submit' class="btn btn-success">Edit Registrasi</a>
-                            @endif 
+                            @endif
                     </div>
                 </form>
                 </div>
-            
+
             </div>
         </div>
     </div>
 </div>
 </div>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/multifield.js"></script>
     <script src="{{ asset('adminassets') }}/vendors/validator/validator.js"></script>
-    
+
     <!-- Javascript functions	-->
 	<script>
 		function hideshow(){
 			var password = document.getElementById("password1");
 			var slash = document.getElementById("slash");
 			var eye = document.getElementById("eye");
-			
+
 			if(password.type === 'password'){
 				password.type = "text";
 				slash.style.display = "block";

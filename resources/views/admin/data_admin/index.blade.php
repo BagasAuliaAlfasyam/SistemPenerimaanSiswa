@@ -9,14 +9,14 @@
                 <div class="x_panel">
                     <a href="{{ route('admin.data_admin.tambah') }}" class="btn btn-primary" role="button">Tambah Data</a>
                     <div class="x_title">
-                        <h2>Data Admin <small>Users</small></h2>
+                        <h2>Data Admin</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="card-box table-responsive">
-                                    
+
                                     <table id="datatable" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
                                             <tr>
@@ -53,17 +53,7 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <!-- /page content -->
 @endsection

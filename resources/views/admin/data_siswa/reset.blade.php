@@ -39,13 +39,10 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nomor Tlp</label>
-                    <input type="number" class="form-control" name="no_tlp" value="{{ $user->no_tlp }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Silahkan Masukan Nomor Tlp">
+                    <label for="exampleInputEmail1">No HP</label>
+                    <input type="number" class="form-control" name="no_tlp" value="{{ $user->no_tlp }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Silahkan Masukan No HP">
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
